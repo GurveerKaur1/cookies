@@ -165,6 +165,7 @@ window.addEventListener('load', () => {
    
 })
 
+const answer = document.querySelector('.answer')
 function operators(){
 
 if (window.navigator.userAgent.includes("Windows NT 10.0") ) return "Windows 10";
@@ -176,3 +177,7 @@ else if (window.navigator.userAgent.includes("Windows NT 5.0") ) return "Windows
 else if (window.navigator.userAgent.includes("Mac")            ) return "Mac/iOS";
 else if (window.navigator.userAgent.includes("X11")            ) return "UNIX";
 else if (window.navigator.userAgent.includes("Linux")          ) return "Linux";}
+
+show.addEventListener('click', () => {
+    answer.innerHTML = operators()
+})
