@@ -133,7 +133,6 @@ function save() {
     }
 
 }
-
 show.addEventListener('click', () => {
     onload.style.visibility = 'hidden';
     save();
@@ -178,6 +177,5 @@ else if (window.navigator.userAgent.includes("Mac")            ) return "Mac/iOS
 else if (window.navigator.userAgent.includes("X11")            ) return "UNIX";
 else if (window.navigator.userAgent.includes("Linux")          ) return "Linux";}
 
-show.addEventListener('click', () => {
-    answer.innerHTML = operators()
-})
+
+
