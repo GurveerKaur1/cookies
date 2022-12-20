@@ -1,3 +1,5 @@
+@import "/reset.css";
+
 *{
     box-sizing: border-box;
 }
@@ -10,11 +12,16 @@ body {
     background-color: #111;
     background-size: cover;
     background-position: center;
-    display: flex;
+    /* display: grid;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    justify-content: center; */
+    /* height: 100vh;
+    margin: 0; */
+    height: calc(var(--vh, 1vh) * 100)
+}
+
+.para{
+  width: 600px;
 }
 p{
     color: #fff;
@@ -32,9 +39,10 @@ p{
 .row{
     display: grid;
     place-items: center;
-    justify-items: center;
-    height: 500px;
-    width:700px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width:700px; */
 }
 
 
@@ -46,13 +54,16 @@ p{
    background-color: #fff;
    border-radius: 12px;
    
-   
-   padding: 20px;
+   box-sizing: border-box;
+   padding: 10px; 
+   /* text-align: center; */
 }
 
 .button{
     display: flex;
     position: absolute;
+    text-align: center;
+    margin-left: 10px; 
 }
 
 .two{
@@ -177,4 +188,12 @@ span{
 .answer{
   font-size: 24px;
   color: #fff;
+}
+
+@media (max-width:800px) {
+
+  .para{
+    width: 300px;
+    font-size: 16px;
+  }
 }
